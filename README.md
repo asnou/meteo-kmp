@@ -35,7 +35,7 @@ options:
    - Composable
    - Preview
    - actual expect
-3. Les ressources string (i18n), font, theme, images 
+3. Les ressources string (i18n), font, images, theme 
 4. Navigation et ecran de base
 5. Design system
 6. Injection de dépendances (Koin) https://insert-koin.io/docs/reference/koin-core/kmp-setup/
