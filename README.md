@@ -28,10 +28,17 @@ options:
 
 ---
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html),
-[Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform/#compose-multiplatform),
-[Kotlin/Wasm](https://kotl.in/wasm/)…
+### Steps to create a new Compose Multiplatform project
 
-We would appreciate your feedback on Compose/Web and Kotlin/Wasm in the public Slack
-channel [#compose-web](https://slack-chats.kotlinlang.org/c/compose-web).
-If you face any issues, please report them on [YouTrack](https://youtrack.jetbrains.com/newIssue?project=CMP).
+1. Create a new project in IntelliJ IDEA or Android Studio.
+2. Montrer les composants Multiplatform dans le projet et les spécificités
+   - Composable
+   - Preview
+   - actual expect
+3. Les ressources string (i18n), font, theme, images 
+4. Navigation et ecran de base
+5. Design system
+6. Injection de dépendances (Koin) https://insert-koin.io/docs/reference/koin-core/kmp-setup/
+7. ViewModel  
+8. API rest (Ktor) https://ktor.io/docs/client-create-multiplatform-application.html
+9. Persistence (preference, sqlite, datastore) natif (preference), Room (sqlite), DataStore (proto)
