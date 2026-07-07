@@ -1,0 +1,9 @@
+package com.devmind.meteo.kmp
+
+class Greeting {
+    private val platform = getPlatform()
+
+    fun greet(): String {
+        return sayHello(platform.name)
+    }
+}
