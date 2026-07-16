@@ -19,6 +19,9 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import com.devmind.meteo.kmp.ui.AddIcon
+import com.devmind.meteo.kmp.ui.navigation.AppLayout
+import com.devmind.meteo.kmp.ui.navigation.AppNavigation
+import com.devmind.meteo.kmp.ui.screens.ExampleScreen
 import com.devmind.meteo.kmp.ui.titleFont
 import meteo_kmp.shared.generated.resources.Audiowide_Regular
 import meteo_kmp.shared.generated.resources.MirandaSans_VariableFont_wght
@@ -35,32 +38,6 @@ import org.jetbrains.compose.resources.stringResource
 @Preview
 fun App() {
     MaterialTheme {
-        var showContent by remember { mutableStateOf(false) }
-        Column(
-            modifier = Modifier
-                .background(MaterialTheme.colorScheme.primaryContainer)
-                .safeContentPadding()
-                .fillMaxSize(),
-            horizontalAlignment = Alignment.CenterHorizontally,
-        ) {
-            Button(onClick = { showContent = !showContent }) {
-                Text(
-                    stringResource(Res.string.click_me),
-                    fontFamily = titleFont()
-                )
-            }
-            AnimatedVisibility(showContent) {
-                val greeting = remember { Greeting().greet() }
-                Column(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                ) {
-                    Image(painterResource(Res.drawable.compose_multiplatform),null)
-                    Image(imageResource( Res.drawable.img), null)
-                    Icon(imageVector = AddIcon, null)
-                    Text("Compose: $greeting")
-                }
-            }
-        }
+        AppLayout()
     }
 }

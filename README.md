@@ -37,6 +37,9 @@ options:
    - actual expect
 3. Les ressources string (i18n), font, images, theme 
 4. Navigation et ecran de base
+ - Scafold https://developer.android.com/develop/ui/compose/components/scaffold?hl=fr
+ - ajout dependance `compose-navigation = { module = "org.jetbrains.androidx.navigation:navigation-compose", version.ref = "composeNavigation" }`
+ - mofif gradle pour ajouter navigation dans le projet
 5. Design system
 6. Injection de dépendances (Koin) https://insert-koin.io/docs/reference/koin-core/kmp-setup/
 7. ViewModel  

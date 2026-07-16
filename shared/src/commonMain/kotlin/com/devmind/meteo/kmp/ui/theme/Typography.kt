@@ -6,7 +6,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.sp
 import meteo_kmp.shared.generated.resources.Audiowide_Regular
 import meteo_kmp.shared.generated.resources.MirandaSans_VariableFont_wght
