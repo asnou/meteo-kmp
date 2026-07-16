@@ -21,7 +21,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.devmind.meteo.kmp.Greeting
 import com.devmind.meteo.kmp.ui.AddIcon
-import com.devmind.meteo.kmp.ui.titleFont
+import com.devmind.meteo.kmp.ui.theme.Typography.titleFont
 import meteo_kmp.shared.generated.resources.Res
 import meteo_kmp.shared.generated.resources.click_me
 import meteo_kmp.shared.generated.resources.compose_multiplatform

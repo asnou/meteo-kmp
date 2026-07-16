@@ -1,3 +1,15 @@
 <resources>
     <string name="click_me">Cliquez sur le bouton!</string>
+
+    <string name="error_icon_description">Icône d'erreur</string>
+
+    <string name="validation_required">Ce champ est obligatoire</string>
+    <string name="validation_password_invalid">Le mot de passe est invalide</string>
+    <string name="validation_number_invalid">Le nombre est invalide</string>
+    <string name="validation_decimal_invalid">La valeur décimale est invalide</string>
+    <string name="validation_email_invalid">L'adresse e-mail est invalide</string>
+    <string name="validation_phone_invalid">Le numéro de téléphone est invalide</string>
+    <string name="action_ok_description">Ok</string>
+
+
 </resources>

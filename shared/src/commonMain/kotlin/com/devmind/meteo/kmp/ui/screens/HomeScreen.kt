@@ -4,21 +4,17 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.input.key.Key.Companion.R
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.devmind.meteo.kmp.ui.titleFont
+import com.devmind.meteo.kmp.ui.theme.Typography.titleFont
 import meteo_kmp.shared.generated.resources.Res
-import meteo_kmp.shared.generated.resources.compose_multiplatform
 import meteo_kmp.shared.generated.resources.img
 import org.jetbrains.compose.resources.imageResource
-import org.jetbrains.compose.resources.painterResource
 
 @Composable
 @Preview(showBackground = true)
