@@ -1,4 +1,6 @@
-package com.devmind.meteo.kmp
+package com.devmind.meteo.kmp.services
+
+import com.devmind.meteo.kmp.getPlatform
 
 class Greeting {
     private val platform = getPlatform()

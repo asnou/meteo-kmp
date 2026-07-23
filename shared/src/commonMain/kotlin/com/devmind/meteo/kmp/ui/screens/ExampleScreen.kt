@@ -7,10 +7,8 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.safeContentPadding
-import androidx.compose.material3.Button
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -19,9 +17,10 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.devmind.meteo.kmp.Greeting
-import com.devmind.meteo.kmp.ui.AddIcon
-import com.devmind.meteo.kmp.ui.theme.Typography.titleFont
+import com.devmind.automation.ui.component.ButtonComponent
+import com.devmind.meteo.kmp.services.Greeting
+import com.devmind.meteo.kmp.ui.images.AddIcon
+import com.devmind.meteo.kmp.ui.components.RegularText
 import meteo_kmp.shared.generated.resources.Res
 import meteo_kmp.shared.generated.resources.click_me
 import meteo_kmp.shared.generated.resources.compose_multiplatform
@@ -41,12 +40,12 @@ fun ExampleScreen() {
             .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
-        Button(onClick = { showContent = !showContent }) {
-            Text(
-                stringResource(Res.string.click_me),
-                fontFamily = titleFont()
-            )
+        ButtonComponent(
+            text = stringResource(Res.string.click_me),
+        ) {
+            showContent = !showContent
         }
+
         AnimatedVisibility(showContent) {
             val greeting = remember { Greeting().greet() }
             Column(
@@ -56,7 +55,7 @@ fun ExampleScreen() {
                 Image(painterResource(Res.drawable.compose_multiplatform),null)
                 Image(imageResource( Res.drawable.img), null)
                 Icon(imageVector = AddIcon, null)
-                Text("Compose: $greeting")
+                RegularText("Compose: $greeting")
             }
         }
     }
