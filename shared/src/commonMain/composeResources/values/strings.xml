@@ -11,5 +11,6 @@
     <string name="validation_phone_invalid">The phone number is invalid</string>
     <string name="action_ok_description">Ok</string>
 
-
+    <string name="city_name">City name</string>
+    <string name="refresh">Refresh</string>
 </resources>

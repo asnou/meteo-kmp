@@ -12,12 +12,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.devmind.automation.ui.image.meteo.WmoWeatherCode
-import com.devmind.meteo.kmp.model.MeteoOnTimeRange
+import com.devmind.meteo.kmp.data.api.HourData
 import com.devmind.meteo.kmp.services.toDegree
 import com.devmind.meteo.kmp.ui.PhonePreview
 
 @Composable
-fun MeteoRangeComponent(meteoOnTimeRange: MeteoOnTimeRange) {
+fun MeteoRangeComponent(meteoOnTimeRange: HourData) {
     Row(
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(8.dp),
@@ -56,30 +56,12 @@ private fun MeteoRangeComponentPreview() {
 }
 
 fun createRange(time: Int) =
-    MeteoOnTimeRange(
+    HourData(
         datetime = "$time:00:00",
         datetimeEpoch = 1795007400L,
         temp = 57.0,
-        feelslike = 21.0,
+        feelsLike = 21.0,
         humidity = 65.0,
-        dew = 15.5,
-        precip = 0.0,
-        precipprob = 10.0,
-        snow = 0.0,
-        snowdepth = 0.0,
-        preciptype = null,
-        windgust = 18.5,
-        windspeed = 12.0,
-        winddir = 220.0,
-        pressure = 1013.5,
-        visibility = 10.0,
-        cloudcover = 25.0,
-        solarradiation = 750.0,
-        solarenergy = 2.5,
-        uvindex = 6.0,
-        severerisk = 0.0,
         conditions = "Partly cloudy",
         icon = "partly-cloudy-day",
-        stations = null,
-        source = "test"
     )
