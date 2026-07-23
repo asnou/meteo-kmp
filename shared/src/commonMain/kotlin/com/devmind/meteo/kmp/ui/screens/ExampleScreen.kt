@@ -28,11 +28,14 @@ import meteo_kmp.shared.generated.resources.img
 import org.jetbrains.compose.resources.imageResource
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
+import org.koin.compose.koinInject
 
 @Composable
 @Preview
 fun ExampleScreen() {
     var showContent by remember { mutableStateOf(false) }
+    var greeting: Greeting = koinInject()
+
     Column(
         modifier = Modifier
             .background(MaterialTheme.colorScheme.primaryContainer)
@@ -47,14 +50,12 @@ fun ExampleScreen() {
         }
 
         AnimatedVisibility(showContent) {
-            val greeting = remember { Greeting().greet() }
+            val greeting = remember { greeting.greet() }
             Column(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalAlignment = Alignment.CenterHorizontally,
             ) {
-                Image(painterResource(Res.drawable.compose_multiplatform),null)
                 Image(imageResource( Res.drawable.img), null)
-                Icon(imageVector = AddIcon, null)
                 RegularText("Compose: $greeting")
             }
         }
