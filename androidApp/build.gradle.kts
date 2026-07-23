@@ -22,7 +22,7 @@ dependencies {
 
 android {
     namespace = "com.devmind.meteo.kmp"
-    compileSdk = libs.versions.android.compileSdk.get().toInt()
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.devmind.meteo.kmp"
